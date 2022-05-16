@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.myweatherapp.SecondScreen">
+
+    <!--inserting status image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/weatherIcon"
+        android:src="@drawable/finding"
+        android:layout_marginTop="120dp">
+    </ImageView>
+
+    <!--inserting layout -->
+
+    <!--inserting bottom button -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_above="@+id/cityFinder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="vertical">
+
+        <!--inserting celsius value -->
+
+        <!--inserting weather status -->
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:text="0*C"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/weatherCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30sp"
+            android:paddingLeft="30sp"
+            android:text="---------"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <!--inserting city name -->
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30sp"
+            android:paddingLeft="30sp"
+            android:text="Fetching_____"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="256dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/buttondesign">
+
+        <!--inserting text Want To Search For New City -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Want To Search For New City"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
